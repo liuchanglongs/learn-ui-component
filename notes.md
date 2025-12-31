@@ -127,3 +127,8 @@ MAJOR.MINOR.PATCH-beta.0
 -   为啥 ant 会输出这种产物：esm
 -   tsup 常见的打包配置
 -   rollup、vite 后面了解
+-   3 种产物指定入口有啥区别
+
+2. 样式设计：
+   主题色：背景色、字体色：用变量
+   样式方面，使用 CSS-in-JS 方案（如 styled-components ）

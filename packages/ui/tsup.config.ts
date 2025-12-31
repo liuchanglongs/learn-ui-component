@@ -5,6 +5,7 @@ export default defineConfig([
     {
         // 打包入口src：会根据目录输出
         entry: ['src'],
+        // ignoreWatch: ['**/es', '**/dist', '**/*.css'],
         // 打包产物输出类型文件
         dts: true,
         // 是否切片
