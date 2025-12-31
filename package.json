@@ -1,0 +1,48 @@
+{
+    "name": "miaoma-ui",
+    "version": "0.0.1",
+    "description": "妙码官方 UI 组件库",
+    "packageManager": "pnpm@9.0.4",
+    "main": "index.js",
+    "scripts": {
+        "dev": "turbo dev",
+        "lint:es": "eslint packages/**/*.js",
+        "lint:style": "stylelint \"(packages|apps)/**/*.css\"",
+        "lint": "pnpm lint:es && pnpm lint:style",
+        "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
+        "prepare": "husky",
+        "commit": "git-cz",
+        "release:ui": "turbo release:ui",
+        "release:docs": "turbo release:docs"
+    },
+    "author": "Heyi",
+    "license": "ISC",
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-git"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix"
+        ],
+        "*.css": [
+            "stylelint --fix"
+        ]
+    },
+    "devDependencies": {
+        "eslint": "9.6.0",
+        "@eslint/js": "9.6.0",
+        "typescript": "5.5.2",
+        "typescript-eslint": "7.14.1",
+        "cspell": "8.9.1",
+        "stylelint": "16.6.1",
+        "husky": "9.0.11",
+        "commitlint": "19.3.0",
+        "cz-git": "1.9.3",
+        "commitizen": "4.3.0",
+        "@commitlint/config-conventional": "19.2.2",
+        "lint-staged": "15.2.7",
+        "turbo": "2.0.5"
+    }
+}

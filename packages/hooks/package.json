@@ -1,0 +1,12 @@
+{
+    "name": "@miaoma/hooks",
+    "version": "0.0.1",
+    "description": "妙码 hooks，辅助 UI 组件库",
+    "main": "index.js",
+    "scripts": {
+    },
+    "author": "Heyi",
+    "license": "ISC",
+    "devDependencies": {
+    }
+}

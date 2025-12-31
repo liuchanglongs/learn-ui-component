@@ -1,0 +1,19 @@
+node_modules
+.DS_Store
+**/build
+**/dist
+**/es
+**/docs-dist
+
+# dumi
+**/.dumi
+**/tmp
+
+.turbo
+
+.cspellcache
+
+pnpm-lock.yaml
+yarn.lock
+
+node_modules/

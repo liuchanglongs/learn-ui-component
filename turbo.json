@@ -1,0 +1,17 @@
+{
+    "$schema": "https://turbo.build/turbo.json",
+    "tasks": {
+        "dev": {
+            "cache": false,
+            "persistent": false
+        },
+        "release:ui": {
+            "cache": false,
+            "persistent": false
+        },
+        "release:docs": {
+            "cache": false,
+            "persistent": false
+        }
+    }
+}
