@@ -1,16 +1,18 @@
 {
-  "compilerOptions": {
-    "strict": true,
-    "declaration": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "baseUrl": "./",
-    "paths": {
-      "@@/*": [".dumi/tmp/*"],
-      "my": ["src"],
-      "my/*": ["src/*", "*"]
-    }
-  },
-  "include": [".dumirc.ts", "src/**/*"]
+    "compilerOptions": {
+        "strict": true,
+        "declaration": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        "baseUrl": "./",
+        "paths": {
+            "@@/*": [".dumi/tmp/*"],
+            "my-website": ["src"],
+            "my-website/*": ["src/*", "*"],
+            "@miaoma/ui": ["../../packages/ui/src/index.ts"], // 映射到源码
+            "@miaoma/ui/*": ["../../packages/ui/src/*"]
+        }
+    },
+    "include": [".dumirc.ts", "src/**/*", "../../packages/ui/src/*"]
 }

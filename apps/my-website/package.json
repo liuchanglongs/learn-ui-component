@@ -33,6 +33,7 @@
         "dumi": "^2.4.13",
         "father": "^4.1.0",
         "react": "^18.0.0",
-        "react-dom": "^18.0.0"
+        "react-dom": "^18.0.0",
+        "@miaoma/ui": "workspace:*"
     }
 }

@@ -8,15 +8,15 @@ function App() {
     return (
         <>
             <MiaomaProvider>
-                <Button>Button</Button>
-                <Button variant="default">default</Button>
-                <Button variant="filled">filled</Button>
-                <Button variant="gradient">gradient</Button>
-                <Button variant="light">light</Button>
-                <Button variant="outline">outline</Button>
-                <Button variant="subtle">subtle</Button>
-                <Button variant="transparent">transparent</Button>
-                <Button variant="white">white</Button>
+                <Button variant="filled">Button55</Button>
+                <Button variant="default">defa1ult</Button>
+                <Button variant="filled">fill1ed</Button>
+                <Button variant="gradient">gra1dient</Button>
+                <Button variant="light">lig1ht</Button>
+                <Button variant="outline">ou1tline</Button>
+                <Button variant="subtle">sub1tle</Button>
+                <Button variant="transparent">tran1sparent</Button>
+                <Button variant="white">whi1te</Button>
             </MiaomaProvider>
         </>
     )
