@@ -1,7 +1,7 @@
 /*
- *   Copyright (c) 2024 妙码学院-Heyi
+ *   Copyright (c) 2024 -Heyi
  *   All rights reserved.
- *   妙码学院官方出品，作者 @Heyi，供学员学习使用，可用作练习，可用作美化简历，不可开源。
+ *   出品，作者 @Heyi，供学员学习使用，可用作练习，可用作美化简历，不可开源。
  */
 import { useTheme } from 'antd-style'
 import { MoonStar, Palette, Zap } from 'lucide-react'
@@ -42,7 +42,7 @@ export default () => {
             <Center>
                 <h2 style={{ fontSize: 20 }}>🤯 一起来学习最最接近企业级组件库开发流程与设计</h2>
                 <div style={{ color: theme.colorTextDescription, textAlign: 'center' }}>
-                    妙码学院官方 UI 组件库 @miaoma/ui，具备主流库特性{' '}
+                    UI 组件库 @miaoma/ui，具备主流库特性{' '}
                     <a href="https://mantine.dev/" rel="noreferrer" target="_blank">
                         mantine
                     </a>

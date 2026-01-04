@@ -17,7 +17,7 @@ export default defineConfig({
     themeConfig: {
         favicons: ['https://www.miaomaedu.com/favicon.ico'],
         logo: 'https://foruda.gitee.com/avatar/1712414558118907760/14266999_miaomaedu_1712414558.png',
-        title: '妙码学院 | @miaoma/ui',
+        title: ' | @miaoma/ui',
         // name: 'miaoma',
         footer: false,
         hideHomeNav: true,

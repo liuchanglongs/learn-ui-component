@@ -119,16 +119,15 @@ MAJOR.MINOR.PATCH-beta.0
 
 <!-- 学习 -->
 
-1. [ui](packages/ui)
+主题色：背景色、字体色：用变量
+样式方面，使用 CSS-in-JS 方案（如 styled-components ）
 
--   了解 tsup、rollup、vite 为啥
-    tsup（react 中推荐）、rollup(vue 推荐)、其它不推荐
+-   Mantine UI 内部自实现的集中状态管理：（学习）https://github.com/mantinedev/mantine/blob/master/packages/%40mantine/store/src/store.ts
+    学习使用 useSyncExternalStore
 
--   为啥 ant 会输出这种产物：esm
--   tsup 常见的打包配置
--   rollup、vite 后面了解
--   3 种产物指定入口有啥区别
+-   Npm 私服搭建：https://verdaccio.org/zh-cn/
+-   nrm：https://github.com/Pana/nrm
 
-2. 样式设计：
-   主题色：背景色、字体色：用变量
-   样式方面，使用 CSS-in-JS 方案（如 styled-components ）
+1. 去了解 dmui
+2. dumi-theme 有哪些？
+   vscode 的插件怎么提示安装库、有哪些版本
