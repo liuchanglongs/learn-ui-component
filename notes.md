@@ -46,16 +46,16 @@ monorepo 方案，为了在一个 git 仓库中管理多个项目，并且更友
 
 用于流程化代码管理，分支规范和 tag 规范
 
-- 切分支，怎么合分支（merge、rebase）
-- tag，版本号怎么约定
+-   切分支，怎么合分支（merge、rebase）
+-   tag，版本号怎么约定
 
 ### 分支规范
 
-- 主分支：main、master，用于归档上线代码
-- 开发分支：develop，用于开发
-- 特性分支：features/xxx，用于特性需求开发
-- 发布分支：releases/xxx，用于发布
-- 热修复分支：hotfixes/xxx，用于修复线上 bug
+-   主分支：main、master，用于归档上线代码
+-   开发分支：develop，用于开发
+-   特性分支：features/xxx，用于特性需求开发
+-   发布分支：releases/xxx，用于发布
+-   热修复分支：hotfixes/xxx，用于修复线上 bug
 
 ### 版本控制
 
@@ -91,12 +91,12 @@ MAJOR.MINOR.PATCH-beta.0
 1. UI 库项目项目
    最终发到 npm 上，但是我们现在是发到公司内网（npm 私服）
 
-- 私服源地址，仓库地址
-    - 安装 `nrm`，`pnpm add -g nrm`
-    - 添加源：`nrm add miaoma https://packages.aliyun.com/6xxxxxxxe/npm/miaoma/`
-    - 切换源：`nrm use miaoma`
-    - 登录：`npm login`
-      指定 npm 发布包内容：
+-   私服源地址，仓库地址
+    -   安装 `nrm`，`pnpm add -g nrm`
+    -   添加源：`nrm add miaoma https://packages.aliyun.com/6xxxxxxxe/npm/miaoma/`
+    -   切换源：`nrm use miaoma`
+    -   登录：`npm login`
+        指定 npm 发布包内容：
 
 ```json
 // package.json
@@ -105,7 +105,7 @@ MAJOR.MINOR.PATCH-beta.0
 }
 ```
 
-- 发布：`npm publish`
+-   发布：`npm publish`
 
 2. UI 文档项目准备
 
@@ -116,13 +116,3 @@ MAJOR.MINOR.PATCH-beta.0
 1. 在仓库中执行 git remote add origin https://codeup.aliyun.com/xxxxxx/miaoma-ui.git
 1. git push 提交代码
 1. 创建阿里云效流水线
-
-<!-- 学习 -->
-
-- Mantine UI 内部自实现的集中状态管理：（学习）https://github.com/mantinedev/mantine/blob/master/packages/%40mantine/store/src/store.ts
-  学习使用 useSyncExternalStore
-
-- Npm 私服搭建：https://verdaccio.org/zh-cn/
-- nrm：https://github.com/Pana/nrm
-
-    vscode 的插件怎么提示安装库、有哪些版本
