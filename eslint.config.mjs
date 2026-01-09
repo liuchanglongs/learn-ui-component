@@ -15,7 +15,8 @@ export default tseslint.config({
     ignores: ['apps/**/*/{tmp,.dumi}/**/*', '*.js', '**/*/build/**/*', '**/*/es/**/*', '**/*/dist/**/*'],
     // 自定义规则配置
     rules: {
-        'no-console': 'off'
+        'no-console': 'off',
+        '@typescript-eslint/no-explicit-any': 'off'
     },
     // 语言选项
     languageOptions: {
