@@ -19,4 +19,9 @@ export interface ButtonProps {
      * 是否禁用按钮
      */
     disabled?: boolean
+    /**
+     * 点击事件处理函数
+     */
+    onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
+

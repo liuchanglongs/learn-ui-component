@@ -7,13 +7,11 @@ import React from 'react'
 import { StyledButton } from './styles'
 import { ButtonProps } from './types'
 
-export const Button: React.FC<ButtonProps> = ({ variant, children, disabled }) => {
-    console.log(children)
-
+export const Button: React.FC<ButtonProps> = ({ variant, children, disabled, onClick }) => {
     return (
         <>
             {/* <button disabled={disabled}>{children}</button> */}
-            <StyledButton disabled={disabled} variant={variant}>
+            <StyledButton disabled={disabled} variant={variant} onClick={onClick}>
                 {children}
             </StyledButton>
         </>
