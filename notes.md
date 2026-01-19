@@ -116,3 +116,7 @@ MAJOR.MINOR.PATCH-beta.0
 1. 在仓库中执行 git remote add origin https://codeup.aliyun.com/xxxxxx/miaoma-ui.git
 1. git push 提交代码
 1. 创建阿里云效流水线
+
+![alt text](./img/image.png)
+merge：（graph中呈现）会保留分支，分支记录时并行的
+rebace：无分支（记录）保留，直接合并到对应的分支上面
