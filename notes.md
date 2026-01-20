@@ -117,6 +117,21 @@ MAJOR.MINOR.PATCH-beta.0
 1. git push 提交代码
 1. 创建阿里云效流水线
 
-![alt text](./img/image.png)
-merge：（graph中呈现）会保留分支，分支记录时并行的
-rebace：无分支（记录）保留，直接合并到对应的分支上面
+<!-- ------需要实现的任务-------- -->
+
+1.  版本号更新：git tag的、npm包版本号（package.json）：通常我们会选择自动化工具完成版本号更新的工作
+2.  更新日志： 提取commit自动生成（
+3.  构建缓存与优化： nx、Turbo
+    为啥选择Turbo
+    使用Turbo 、怎么生成依赖图
+    配置启动命令：不用turbo
+    ![alt text](./img/1.png)
+    使用turbo
+    ![alt text](img/2.png)
+    ![alt text](img/3.png)
+
+命令：--graph
+默认需要图解析网站：
+![alt text](img/4.png)
+
+4.               vscode 的插件怎么提示安装库、有哪些版本
