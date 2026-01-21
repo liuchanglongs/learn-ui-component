@@ -1,6 +1,6 @@
 {
     "name": "@lcllcllcl/ui",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "UI 组件库",
     "main": "cjs-dist/index.js",
     "module": "esm-dist/index.mjs",
@@ -36,8 +36,7 @@
         "packageManager": "pnpm",
         "cleanup": false,
         "tests": true,
-        "yarn": false,
-        "contents": "."
+        "yarn": false
     },
     "author": "Heyi",
     "license": "ISC",
