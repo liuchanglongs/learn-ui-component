@@ -4,12 +4,16 @@ node_modules
 **/dist
 **/es
 **/docs-dist
-
+**/comDist
 # dumi
 **/.dumi
 **/tmp
 
 .turbo
+
+**/esm-dist
+**/iife-dist
+**/cjs-dist
 
 .cspellcache
 

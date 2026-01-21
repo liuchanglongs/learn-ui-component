@@ -4,8 +4,9 @@
  *   官方出品，作者 @Heyi，供学员学习使用，可用作练习，可用作美化简历，不可开源。
  */
 // 所有组件的样式规则全部在这里
+import React from 'react'
 import styled, { css } from 'styled-components'
-import type { ButtonVariant } from './types'
+import type { ButtonVariant, ButtonProps } from './types'
 import { darken, lighten } from '../../core/utils'
 import { VariantColorResolverResult } from '../../core'
 
@@ -88,7 +89,7 @@ const ButtonVarsCss = css`
  * 按钮组件
  */
 // export const StyledButton = () => 1
-export const StyledButton = styled.button<{ variant?: ButtonVariant }>`
+export const StyledButton: React.ComponentType<ButtonProps> = styled.button<{ variant?: ButtonVariant }>`
     ${ButtonVarsCss}
 
     display: inline-block;
