@@ -4,7 +4,7 @@ This is an example component.
 
 ```jsx
 import { MyButton } from 'my-website'
-import { Button } from '@miaoma/ui'
+import { Button } from '@lcllcllcl/ui'
 // export default () => <Foo title="Hello dumi!" />
 export default () => (
     <div>

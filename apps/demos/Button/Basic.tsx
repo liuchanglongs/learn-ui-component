@@ -5,7 +5,7 @@
  */
 import React from 'react'
 
-import { Button } from '@miaoma/ui'
+import { Button } from '@lcllcllcl/ui'
 
 const Basic: React.FC = () => {
     return <Button variant="default">Click</Button>

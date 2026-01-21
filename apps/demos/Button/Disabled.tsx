@@ -5,7 +5,7 @@
  */
 import React from 'react'
 
-import { Button } from '@miaoma/ui'
+import { Button } from '@lcllcllcl/ui'
 
 const Disabled: React.FC = () => {
     return <Button disabled>cannot click me</Button>

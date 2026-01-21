@@ -31,4 +31,4 @@ export const MiaomaProvider: React.FC<MiaomaProviderProps> = ({ theme, children 
     )
 }
 
-MiaomaProvider.displayName = '@miaoma/ui/MiaomaProvider'
+MiaomaProvider.displayName = '@lcllcllcl/ui/MiaomaProvider'

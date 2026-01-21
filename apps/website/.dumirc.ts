@@ -17,7 +17,7 @@ export default defineConfig({
     themeConfig: {
         favicons: ['https://www.miaomaedu.com/favicon.ico'],
         logo: 'https://foruda.gitee.com/avatar/1712414558118907760/14266999_miaomaedu_1712414558.png',
-        title: ' | @miaoma/ui',
+        title: ' | @lcllcllcl/ui',
         // name: 'miaoma',
         footer: false,
         hideHomeNav: true,
@@ -28,7 +28,7 @@ export default defineConfig({
         apiHeader: {
             docUrl: `{github}/tree/master/src/{atomId}/index.md`,
             match: ['/components', '/mdx'],
-            pkg: '@miaoma/ui',
+            pkg: '@lcllcllcl/ui',
             serviceList: false,
             sourceUrl: `{github}/tree/master/src/{atomId}/index.tsx`
         }
@@ -43,6 +43,6 @@ export default defineConfig({
     ],
     // 子包不打包的方案，用 alias
     alias: {
-        '@miaoma/ui': path.join(__dirname, '../../packages/ui/src')
+        '@lcllcllcl/ui': path.join(__dirname, '../../packages/ui/src')
     }
 })

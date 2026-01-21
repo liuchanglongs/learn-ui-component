@@ -27,7 +27,7 @@ const items: FeaturesProps['items'] = [
     }
 ]
 
-const example = `import { MiaomaProvider, Button } from '@miaoma/ui'
+const example = `import { MiaomaProvider, Button } from '@lcllcllcl/ui'
 
 export default () => (
     <MiaomaProvider>
@@ -42,7 +42,7 @@ export default () => {
             <Center>
                 <h2 style={{ fontSize: 20 }}>🤯 一起来学习最最接近企业级组件库开发流程与设计</h2>
                 <div style={{ color: theme.colorTextDescription, textAlign: 'center' }}>
-                    UI 组件库 @miaoma/ui，具备主流库特性{' '}
+                    UI 组件库 @lcllcllcl/ui，具备主流库特性{' '}
                     <a href="https://mantine.dev/" rel="noreferrer" target="_blank">
                         mantine
                     </a>

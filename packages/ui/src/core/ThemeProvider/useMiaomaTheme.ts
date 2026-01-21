@@ -13,7 +13,7 @@ export const useSafeMiaomaTheme = () => useContext(MiaomaThemeContext) || DEFAUL
 export const useMiaomaTheme = () => {
     const ctx = useContext(MiaomaThemeContext)
     if (!ctx) {
-        throw new Error('@miaoma/ui: MiaomaProvider was not found in component tree, make sure you have it in your app')
+        throw new Error('@lcllcllcl/ui: MiaomaProvider was not found in component tree, make sure you have it in your app')
     }
 
     return ctx

@@ -4,7 +4,7 @@
     "main": "index.js",
     "module": "index.ts",
     "peerDependencies": {
-        "@miaoma/ui": "workspace:*"
+        "@lcllcllcl/ui": "workspace:*"
     },
     "devDependencies": {
         "@types/react": "18.2.75"

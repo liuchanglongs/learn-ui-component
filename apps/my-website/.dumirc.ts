@@ -11,6 +11,6 @@ export default defineConfig({
     //     entryFile: path.join(__dirname, '../../packages/ui/src/index.ts')
     // },
     alias: {
-        '@miaoma/ui': path.join(__dirname, '../../packages/ui/src')
+        '@lcllcllcl/ui': path.join(__dirname, '../../packages/ui/src')
     }
 })

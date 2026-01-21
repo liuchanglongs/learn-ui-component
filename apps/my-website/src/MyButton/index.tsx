@@ -1,4 +1,4 @@
-import { Button, MiaomaProvider } from '@miaoma/ui'
+import { Button, MiaomaProvider } from '@lcllcllcl/ui'
 import React from 'react'
 
 const MyButton = () => {

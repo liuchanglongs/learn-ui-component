@@ -29,4 +29,4 @@ export function MiaomaThemeProvider({ theme, children, inherit = true }: MiaomaT
     return <MiaomaThemeContext.Provider value={mergedTheme}>{children}</MiaomaThemeContext.Provider>
 }
 
-MiaomaThemeProvider.displayName = '@miaoma/ui/MiaomaThemeProvider'
+MiaomaThemeProvider.displayName = '@lcllcllcl/ui/MiaomaThemeProvider'

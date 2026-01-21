@@ -5,7 +5,7 @@
  */
 import React from 'react'
 
-import { Button, MiaomaProvider } from '@miaoma/ui'
+import { Button, MiaomaProvider } from '@lcllcllcl/ui'
 
 const Variant: React.FC = () => {
     return (

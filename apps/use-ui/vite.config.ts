@@ -13,7 +13,7 @@ export default defineConfig({
     resolve: {
         alias: {
             // 关键配置：将包名直接映射到源码入口
-            '@miaoma/ui': path.resolve(__dirname, '../../packages/ui/src/index.ts')
+            '@lcllcllcl/ui': path.resolve(__dirname, '../../packages/ui/src/index.ts')
         }
     }
 })
