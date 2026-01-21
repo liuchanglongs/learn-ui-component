@@ -8,14 +8,6 @@
     "files": [
         "es"
     ],
-    "publishConfig": {
-        "access": "public",
-        "registry": "https://registry.npmjs.org/"
-    },
-    "np": {
-        "packageManager": "pnpm",
-        "cleanup": false
-    },
     "scripts": {
         "dev": "tsup --watch",
         "build": "tsup",
@@ -25,6 +17,14 @@
         "release": "np",
         "release:preview": "np --preview",
         "release:noTests": "np --no-tests"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "np": {
+        "packageManager": "pnpm",
+        "cleanup": false
     },
     "author": "Heyi",
     "license": "ISC",
@@ -36,6 +36,7 @@
         "@vitejs/plugin-react": "^4.3.4",
         "@vitest/coverage-v8": "^4.0.17",
         "jsdom": "^25.0.1",
+        "np": "^10.3.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "styled-components": "6.1.11",
