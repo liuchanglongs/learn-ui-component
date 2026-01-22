@@ -24,7 +24,7 @@
         "release:ui": "pnpm build && npm publish",
         "test": "vitest",
         "test:button": "vitest src/components/Button/Button.test.tsx",
-        "release": "np",
+        "release": "np --otp",
         "release:preview": "np --preview",
         "release:noTests": "np --no-tests"
     },
