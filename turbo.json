@@ -6,13 +6,8 @@
             "persistent": false
         },
         "build": {
-            "dependsOn": [
-                "^build"
-            ],
-            "outputs": [
-                "myWebsiteDist/**"
-                
-            ]
+            "dependsOn": ["^build"],
+            "outputs": ["myWebsiteDist/**"]
         },
         "release:ui": {
             "cache": false,
@@ -20,7 +15,7 @@
         },
         "release:docs": {
             "cache": false,
-            "persistent": false
+            "persistent": true
         }
     }
 }
