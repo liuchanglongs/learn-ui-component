@@ -5,6 +5,15 @@
             "cache": false,
             "persistent": false
         },
+        "build": {
+            "dependsOn": [
+                "^build"
+            ],
+            "outputs": [
+                "myWebsiteDist/**"
+                
+            ]
+        },
         "release:ui": {
             "cache": false,
             "persistent": false

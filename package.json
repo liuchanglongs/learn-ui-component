@@ -13,7 +13,12 @@
         "prepare": "husky",
         "commit": "git-cz",
         "release:ui": "turbo release:ui",
-        "release:docs": "turbo release:docs"
+        "release:docs": "turbo release:docs",
+        "myWebsite:build": "pnpm --filter my-website build",
+        "ui:build": "pnpm --filter @lcllcllcl/ui build",
+        "my:build:pnpm": "pnpm ui:build &&  pnpm myWebsite:build",
+        "my:build": "turbo run build  --filter=my-website",
+        "my:build:graph": "turbo run build  --filter=my-website --graph"
     },
     "author": "Heyi",
     "license": "ISC",
