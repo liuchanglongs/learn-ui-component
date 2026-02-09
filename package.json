@@ -18,7 +18,7 @@
         "my:build:pnpm": "pnpm ui:build &&  pnpm myWebsite:build",
         "my:build": "turbo run build  --filter=my-website",
         "my:build:graph": "turbo run build  --filter=my-website --graph",
-        "release:ui": "pnpm --filter @lcllcllcl/ui test && np --contents packages/ui --no-publish --no-tests && pnpm --filter @lcllcllcl/ui publish"
+        "release:ui": "pnpm --filter @lcllcllcl/ui test && pnpm --dir packages/ui np --no-publish --no-tests && pnpm --filter @lcllcllcl/ui publish"
     },
     "author": "Heyi",
     "license": "ISC",
