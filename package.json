@@ -12,16 +12,26 @@
         "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
         "prepare": "husky",
         "commit": "git-cz",
-        "release:ui": "pnpm --filter @lcllcllcl/ui run test && np --contents packages/ui --no-publish --no-tests && pnpm --filter @lcllcllcl/ui publish",
         "release:docs": "turbo release:docs",
         "myWebsite:build": "pnpm --filter my-website build",
         "ui:build": "pnpm --filter @lcllcllcl/ui build",
         "my:build:pnpm": "pnpm ui:build &&  pnpm myWebsite:build",
         "my:build": "turbo run build  --filter=my-website",
-        "my:build:graph": "turbo run build  --filter=my-website --graph"
+        "my:build:graph": "turbo run build  --filter=my-website --graph",
+        "release:ui": "pnpm --filter @lcllcllcl/ui test && np --contents packages/ui --no-publish --no-tests && pnpm --filter @lcllcllcl/ui publish"
     },
     "author": "Heyi",
     "license": "ISC",
+    "np": {
+        "packageManager": "pnpm",
+        "private": false,
+        "cleanup": false,
+        "tests": false,
+        "yarn": false,
+        "2fa": false,
+        "message": "feat: 发布%s版本",
+        "hooks": {}
+    },
     "config": {
         "commitizen": {
             "path": "node_modules/cz-git"
@@ -48,6 +58,7 @@
         "commitizen": "4.3.0",
         "@commitlint/config-conventional": "19.2.2",
         "lint-staged": "15.2.7",
-        "turbo": "2.0.5"
+        "turbo": "2.0.5",
+        "np": "^11.0.0"
     }
 }

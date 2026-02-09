@@ -27,23 +27,10 @@
         "test:button": "vitest src/components/Button/Button.test.tsx",
         "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
         "changelog:init": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0",
-        "version": "pnpm run changelog && git add .",
-        "release": "pnpm test && np --no-publish --no-tests && pnpm publish ",
-        "release:preview": "np --preview",
-        "release:noTests": "np --no-tests"
+        "version": "pnpm run changelog && git add ."
     },
     "publishConfig": {
         "registry": "https://packages.aliyun.com/6981695a6ec1ba182dc6e89a/npm/npm-registry/"
-    },
-    "np": {
-        "packageManager": "pnpm",
-        "private": false,
-        "cleanup": false,
-        "tests": false,
-        "yarn": false,
-        "2fa": false,
-        "message": "feat: 发布%s版本",
-        "hooks": {}
     },
     "author": "Heyi",
     "license": "ISC",
@@ -66,7 +53,5 @@
         "react": "18.3.1",
         "styled-components": "6.1.11"
     },
-    "dependencies": {
-        "np": "^11.0.0"
-    }
+    "dependencies": {}
 }
