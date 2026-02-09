@@ -27,7 +27,7 @@
         "test:button": "vitest src/components/Button/Button.test.tsx",
         "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
         "changelog:init": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0",
-        "release": "pnpm test && np -no-tests",
+        "release": "pnpm test &&  np --no-publish --no-tests --no-push  && pnpm publish ",
         "release:preview": "np --preview",
         "release:noTests": "np --no-tests"
     },
@@ -43,7 +43,7 @@
         "2fa": false,
         "message": "feat: 发布%s版本",
         "hooks": {
-            "version": "pnpm run changelog"
+            "version": "pnpm run changelog && git add ."
         }
     },
     "author": "Heyi",
