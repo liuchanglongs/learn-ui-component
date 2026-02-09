@@ -12,7 +12,7 @@
         "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
         "prepare": "husky",
         "commit": "git-cz",
-        "release:ui": "turbo release:ui",
+        "release:ui": "pnpm --filter @lcllcllcl/ui run test && np --contents packages/ui --no-publish --no-tests && pnpm --filter @lcllcllcl/ui publish",
         "release:docs": "turbo release:docs",
         "myWebsite:build": "pnpm --filter my-website build",
         "ui:build": "pnpm --filter @lcllcllcl/ui build",
