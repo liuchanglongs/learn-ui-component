@@ -1,6 +1,6 @@
 {
     "name": "@lcllcllcl/ui",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "UI 组件库",
     "main": "cjs-dist/index.js",
     "module": "esm-dist/index.mjs",
@@ -43,7 +43,7 @@
         "2fa": false,
         "message": "feat: 发布%s版本",
         "hooks": {
-            "version": "pnpm run changelog"
+            "version": "pnpm run changelog && git add CHANGELOG.md package.json"
         }
     },
     "author": "Heyi",
