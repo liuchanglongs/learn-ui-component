@@ -42,8 +42,7 @@
         "tests": false,
         "yarn": false,
         "hooks": {
-            "version": "pnpm run version",
-            "prepublish": "pnpm build"
+            "version": "pnpm run version"
         }
     },
     "author": "Heyi",
