@@ -19,7 +19,4 @@ node_modules
 
 .cspellcache
 
-pnpm-lock.yaml
-yarn.lock
-
 node_modules/

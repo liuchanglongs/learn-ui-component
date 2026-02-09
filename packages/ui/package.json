@@ -32,6 +32,16 @@
     "publishConfig": {
         "registry": "https://packages.aliyun.com/6981695a6ec1ba182dc6e89a/npm/npm-registry/"
     },
+    "np": {
+        "packageManager": "pnpm",
+        "private": false,
+        "cleanup": false,
+        "tests": false,
+        "yarn": false,
+        "2fa": false,
+        "message": "feat: 发布%s版本",
+        "hooks": {}
+    },
     "author": "Heyi",
     "license": "ISC",
     "devDependencies": {

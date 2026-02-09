@@ -22,16 +22,7 @@
     },
     "author": "Heyi",
     "license": "ISC",
-    "np": {
-        "packageManager": "pnpm",
-        "private": false,
-        "cleanup": false,
-        "tests": false,
-        "yarn": false,
-        "2fa": false,
-        "message": "feat: 发布%s版本",
-        "hooks": {}
-    },
+     
     "config": {
         "commitizen": {
             "path": "node_modules/cz-git"
