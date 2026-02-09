@@ -22,25 +22,11 @@
     "scripts": {
         "dev": "tsup --watch",
         "build": "tsup",
-        "release:ui": "pnpm run test && np --no-publish --no-tests && pnpm run build && pnpm publish",
         "test": "vitest run",
-        "test:button": "vitest src/components/Button/Button.test.tsx",
-        "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
-        "changelog:init": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0",
-        "version": "pnpm run changelog && git add ."
+        "test:button": "vitest src/components/Button/Button.test.tsx"
     },
     "publishConfig": {
         "registry": "https://packages.aliyun.com/6981695a6ec1ba182dc6e89a/npm/npm-registry/"
-    },
-    "np": {
-        "packageManager": "pnpm",
-        "private": false,
-        "cleanup": false,
-        "tests": false,
-        "yarn": false,
-        "2fa": false,
-        "message": "feat: 发布%s版本",
-        "hooks": {}
     },
     "author": "Heyi",
     "license": "ISC",
@@ -51,7 +37,6 @@
         "@types/react": "18.3.3",
         "@vitejs/plugin-react": "^4.3.4",
         "@vitest/coverage-v8": "^4.0.17",
-        "conventional-changelog-cli": "^5.0.0",
         "jsdom": "^25.0.1",
         "react": "18.3.1",
         "react-dom": "18.3.1",

@@ -17,8 +17,7 @@
         "ui:build": "pnpm --filter @lcllcllcl/ui build",
         "my:build:pnpm": "pnpm ui:build &&  pnpm myWebsite:build",
         "my:build": "turbo run build  --filter=my-website",
-        "my:build:graph": "turbo run build  --filter=my-website --graph",
-        "release:ui": "pnpm --filter @lcllcllcl/ui run release:ui"
+        "my:build:graph": "turbo run build  --filter=my-website --graph"
     },
     "author": "Heyi",
     "license": "ISC",
@@ -48,7 +47,6 @@
         "commitizen": "4.3.0",
         "@commitlint/config-conventional": "19.2.2",
         "lint-staged": "15.2.7",
-        "turbo": "2.0.5",
-        "np": "^11.0.0"
+        "turbo": "2.0.5"
     }
 }
