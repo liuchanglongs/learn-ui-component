@@ -22,8 +22,10 @@
     "scripts": {
         "dev": "tsup --watch",
         "build": "tsup",
+        "test:dev": "vitest --watch",
         "test": "vitest run",
-        "test:button": "vitest src/components/Button/Button.test.tsx"
+        "test:button": "vitest src/components/Button/Button.test.tsx",
+        "prepublishOnly": "npm run build"
     },
     "publishConfig": {
         "registry": "https://packages.aliyun.com/6981695a6ec1ba182dc6e89a/npm/npm-registry/"

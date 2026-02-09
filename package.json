@@ -17,7 +17,10 @@
         "ui:build": "pnpm --filter @lcllcllcl/ui build",
         "my:build:pnpm": "pnpm ui:build &&  pnpm myWebsite:build",
         "my:build": "turbo run build  --filter=my-website",
-        "my:build:graph": "turbo run build  --filter=my-website --graph"
+        "my:build:graph": "turbo run build  --filter=my-website --graph",
+        "changeset": "changeset",
+        "ui:version": "changeset version && pnpm install",
+        "ui:publish": "pnpm --filter @lcllcllcl/ui test && changeset publish"
     },
     "author": "Heyi",
     "license": "ISC",
@@ -35,18 +38,19 @@
         ]
     },
     "devDependencies": {
-        "eslint": "9.6.0",
-        "@eslint/js": "9.6.0",
-        "typescript": "5.5.2",
-        "typescript-eslint": "7.14.1",
-        "cspell": "8.9.1",
-        "stylelint": "16.6.1",
-        "husky": "9.0.11",
-        "commitlint": "19.3.0",
-        "cz-git": "1.9.3",
-        "commitizen": "4.3.0",
+        "@changesets/cli": "^2.29.8",
         "@commitlint/config-conventional": "19.2.2",
+        "@eslint/js": "9.6.0",
+        "commitizen": "4.3.0",
+        "commitlint": "19.3.0",
+        "cspell": "8.9.1",
+        "cz-git": "1.9.3",
+        "eslint": "9.6.0",
+        "husky": "9.0.11",
         "lint-staged": "15.2.7",
-        "turbo": "2.0.5"
+        "stylelint": "16.6.1",
+        "turbo": "2.0.5",
+        "typescript": "5.5.2",
+        "typescript-eslint": "7.14.1"
     }
 }
