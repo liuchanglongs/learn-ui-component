@@ -1,6 +1,6 @@
 {
     "name": "@lcllcllcl/ui",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "UI 组件库",
     "main": "cjs-dist/index.js",
     "module": "esm-dist/index.mjs",
@@ -28,7 +28,7 @@
         "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
         "changelog:init": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0",
         "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md",
-        "release": "np --no-publish",
+        "release": " pnpm run test && np --no-publish && pnpm publish",
         "release:preview": "np --preview",
         "release:noTests": "np --no-tests"
     },
