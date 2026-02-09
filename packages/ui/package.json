@@ -40,6 +40,7 @@
         "cleanup": false,
         "tests": false,
         "yarn": false,
+        "2fa": false,
         "message": "feat: 发布%s版本",
         "hooks": {
             "version": "pnpm run changelog"
