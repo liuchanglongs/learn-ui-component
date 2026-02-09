@@ -28,7 +28,7 @@
         "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
         "changelog:init": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0",
         "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md",
-        "release": "np --otp",
+        "release": "np --no-publish",
         "release:preview": "np --preview",
         "release:noTests": "np --no-tests"
     },
