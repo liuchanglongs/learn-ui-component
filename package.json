@@ -20,7 +20,9 @@
         "my:build:graph": "turbo run build  --filter=my-website --graph",
         "changeset": "changeset",
         "ui:version": "changeset version && pnpm install",
-        "ui:publish": "pnpm --filter @lcllcllcl/ui test && changeset publish"
+        "ui:publish": "pnpm --filter @lcllcllcl/ui test && pnpm --filter @lcllcllcl/ui publish --no-git-checks",
+        "ui:tag": "node scripts/ui-tag.cjs",
+        "ui:release": "pnpm changeset && pnpm ui:version && pnpm ui:publish && pnpm ui:tag"
     },
     "author": "Heyi",
     "license": "ISC",
