@@ -23,12 +23,12 @@
         "dev": "tsup --watch",
         "build": "tsup",
         "release:ui": "pnpm build && npm publish",
-        "test": "vitest",
+        "test": "vitest run",
         "test:button": "vitest src/components/Button/Button.test.tsx",
         "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
         "changelog:init": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0",
         "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md",
-        "release": " pnpm run test && np --no-publish --no-tests && pnpm publish",
+        "release": "pnpm test && np --no-2fa",
         "release:preview": "np --preview",
         "release:noTests": "np --no-tests"
     },
@@ -37,11 +37,12 @@
     },
     "np": {
         "packageManager": "pnpm",
-        "cleanup": false,
-        "tests": true,
+        "private": false,
+        "cleanup": true,
+        "tests": false,
         "yarn": false,
         "hooks": {
-            "version": "pnpm version && git add CHANGELOG.md"
+            "prepublish": "pnpm build"
         }
     },
     "author": "Heyi",
