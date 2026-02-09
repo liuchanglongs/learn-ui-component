@@ -28,7 +28,7 @@
         "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
         "changelog:init": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0",
         "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s ",
-        "release": "pnpm test &&  np --no-publish --no-tests --no-push && pnpm publish && git push --follow-tags",
+        "release": "pnpm test &&  np --no-publish --no-tests && pnpm publish && git push --follow-tags",
         "release:preview": "np --preview",
         "release:noTests": "np --no-tests"
     },
