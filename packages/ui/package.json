@@ -1,6 +1,6 @@
 {
     "name": "@lcllcllcl/ui",
-    "version": "0.0.13",
+    "version": "0.0.2",
     "description": "UI 组件库",
     "main": "cjs-dist/index.js",
     "module": "esm-dist/index.mjs",
@@ -25,7 +25,11 @@
         "test:dev": "vitest --watch",
         "test": "vitest run",
         "test:button": "vitest src/components/Button/Button.test.tsx",
-        "prepublishOnly": "pnpm run build"
+        "prepublishOnly": "pnpm run build",
+        "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
+        "changelog:init": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0",
+        "version": "conventional-changelog -p angular -i CHANGELOG.md -s",
+        "changelog:ui": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s"
     },
     "publishConfig": {
         "registry": "https://packages.aliyun.com/6981695a6ec1ba182dc6e89a/npm/npm-registry/"

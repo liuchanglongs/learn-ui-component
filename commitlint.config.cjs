@@ -8,6 +8,26 @@
 module.exports = {
     extends: ['@commitlint/config-conventional'], // extends can be nested
     // parserPreset: 'conventional-changelog-conventionalcommits',
+    rules: {
+        'type-enum': [
+            2,
+            'always',
+            [
+                'feat',
+                'fix',
+                'docs',
+                'style',
+                'refactor',
+                'perf',
+                'test',
+                'build',
+                'ci',
+                'chore',
+                'revert',
+                'release' // 加这个
+            ]
+        ]
+    },
     prompt: {
         settings: {},
         messages: {
@@ -20,6 +40,7 @@ module.exports = {
         },
         types: [
             { value: 'feat', name: 'feat:     ✨  A new feature', emoji: '✨ ' },
+            { value: 'release', name: 'release:  🎉  A new release', emoji: '🎉 ' },
             { value: 'fix', name: 'fix:      🐛  A bug fix', emoji: '🐛 ' },
             { value: 'docs', name: 'docs:     📝  Documentation only changes', emoji: '📝 ' },
             {

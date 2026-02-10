@@ -18,11 +18,10 @@
         "my:build:pnpm": "pnpm ui:build &&  pnpm myWebsite:build",
         "my:build": "turbo run build  --filter=my-website",
         "my:build:graph": "turbo run build  --filter=my-website --graph",
-        "changeset": "changeset",
-        "ui:version": "changeset version && pnpm install",
-        "ui:publish": "pnpm --filter @lcllcllcl/ui test && pnpm --filter @lcllcllcl/ui publish --no-git-checks",
+        "ui:version": "changeset & changeset version && pnpm install",
+        "ui:publish": "pnpm --filter @lcllcllcl/ui publish  --no-git-checks",
         "ui:tag": "node scripts/ui-tag.cjs",
-        "ui:release": "pnpm changeset && pnpm ui:version && pnpm ui:publish && pnpm ui:tag"
+        "ui:release": "pnpm --filter @lcllcllcl/ui test && pnpm ui:version && pnpm ui:publish && pnpm ui:tag  && pnpm commit "
     },
     "author": "Heyi",
     "license": "ISC",
@@ -45,6 +44,7 @@
         "@eslint/js": "9.6.0",
         "commitizen": "4.3.0",
         "commitlint": "19.3.0",
+        "conventional-changelog-cli": "^5.0.0",
         "cspell": "8.9.1",
         "cz-git": "1.9.3",
         "eslint": "9.6.0",
